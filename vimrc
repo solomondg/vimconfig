@@ -21,11 +21,12 @@ Plugin 'majutsushi/tagbar'
 " Plugin 'kien/ctrlp.vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'SirVer/ultisnips'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
+Plugin 'scrooloose/snipmate-snippets'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 "Install vim-snippets
-Bundle "honza/vim-snippets"
+Plugin 'honza/vim-snippets'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'godlygeek/tabular'
 Plugin 'scrooloose/syntastic'
@@ -35,6 +36,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'rbgrouleff/bclose.vim'
 Plugin 'corntrace/bufexplorer'
 Plugin 'godlygeek/csapprox'
+" Plugin 'Yggdroot/indentLine'
 Plugin 'klen/python-mode'
 Plugin 'gregsexton/gitv'
 Plugin 'airblade/vim-gitgutter'
@@ -43,8 +45,11 @@ Plugin 'tpope/vim-surround'
 " Plugin 'Shougo/neosnippet'
 " Plugin 'Shougo/neosnippet-snippets'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'Raimondi/delimitMate'
+Plugin 'kien/ctrlp.vim'
 " Plugin 'mmozuras/vim-github-comment'
 Plugin 'mattn/emmet-vim'
+Plugin 'ervandew/supertab'
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -83,6 +88,8 @@ command W w
 command Q q
 
 command Y !go run %
+
+command WPY w | !python3.4 %
 
 " Python-mode
 " " Activate rope
@@ -150,3 +157,18 @@ set nofoldenable
 let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#09AA08'
 let g:indentLine_char = '│'
+
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+
+" vertical line indentation
+let g:indentLine_color_term = 239
+let g:indentLine_color_gui = '#09AA08'
+let g:indentLine_char = '│'
+
+let g:SuperTabDefaultCompletionType = 'context'
+let g:EclimCompletionMethod = 'omnifunc'
+
+let g:ctrlp_map = '<c-p>'
+
+let mapleader=","
+
