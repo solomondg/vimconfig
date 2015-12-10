@@ -50,8 +50,9 @@ Plugin 'kien/ctrlp.vim'
 " Plugin 'mmozuras/vim-github-comment'
 Plugin 'mattn/emmet-vim'
 Plugin 'ervandew/supertab'
+Plugin 'dhruvasagar/vim-table-mode'
 
-call vundle#end()            " required
+call vundle#end()
 filetype plugin indent on
 
 map <F2> :NERDTreeToggle<CR>
